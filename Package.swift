@@ -16,15 +16,15 @@ let package = Package(
         .target(name: "TomMath",
                 path: ".",
                 exclude: [
-                    "vendor/demo",
-                    "vendor/doc",
-                    "vendor/etc",
-                    "vendor/logs",
-                    "vendor/mtest",
-                    "vendor/Package.swift",
+                    "Vendor/demo",
+                    "Vendor/doc",
+                    "Vendor/etc",
+                    "Vendor/logs",
+                    "Vendor/mtest",
+                    "Vendor/Package.swift",
                 ],
                 sources: [
-                    "vendor"
+                    "Vendor"
                 ],
                 publicHeadersPath: "Headers",
                 cSettings: [
