@@ -1,16 +1,13 @@
 # TomMathSPM
 ## Setup
-##### A note on versions
-This package uses build flags that SPM considers unsafe so cannot be used within a versioned Swfit Package. To work around this, please consume this package using branch names instead (E.g. `main` or `release/v1.2.1`)
-
 ##### Setup with Swift Package Manager (in project)
 * In Xcode select File > Add Packages.
 * Enter this project's URL: https://github.com/DavidSouthgate/TomMathSPM.git
-* Specify branch version required (E.g. `main` or `release/v1.2.1`)
+* Specify minimum version required (E.g. `1.2.1`)
 
 ##### Setup with Swift Package Manager (in Swift Package)
 * Add the following dependency in your package manifest
 
 ```
-.package(url: "https://github.com/DavidSouthgate/TomMathSPM.git", branch: "release/v1.2.1")
+.package(url: "https://github.com/DavidSouthgate/TomMathSPM.git", from: "1.2.1")
 ```

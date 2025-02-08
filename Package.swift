@@ -16,20 +16,22 @@ let package = Package(
         .target(name: "TomMath",
                 path: ".",
                 exclude: [
+                    "Package.swift",
+                    "Headers",
+                    "Tests",
                     "Vendor/demo",
                     "Vendor/doc",
                     "Vendor/etc",
                     "Vendor/logs",
                     "Vendor/mtest",
                     "Vendor/Package.swift",
+                    "Vendor/s_mp_rand_platform.c",
                 ],
                 sources: [
-                    "Vendor"
+                    "."
                 ],
                 publicHeadersPath: "Headers",
-                cSettings: [
-                    .unsafeFlags(["-flto=thin"])  // for Dead Code Elimination
-                ]),
+                cSettings: []),
         .testTarget(name: "TomMathTests",
                    dependencies: [
                         "TomMath"
